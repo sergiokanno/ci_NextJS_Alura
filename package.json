@@ -5,6 +5,7 @@
   "author": "Windows (Sergio Kanno) <sergio.kanno@outlook.com.br>",
   "license": "MIT",
   "dependencies": {
+    "eslint-plugin-prettier": "^5.4.1",
     "next": "^15.3.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
@@ -14,6 +15,11 @@
     "build": "rm -rf build && next build && mv ./out ./build",
     "executa": "next .",
     "start": "next start",
-    "lint": "next lint"  
+    "lint": "next lint"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3",
+    "eslint-config-prettier": "^10.1.5"
   }
 }
