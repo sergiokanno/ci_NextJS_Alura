@@ -1,0 +1,19 @@
+{
+  "name": "CI_NextJS_Alura",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Windows (Sergio Kanno) <sergio.kanno@outlook.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^15.3.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "rm -rf build && next build && mv ./out ./build",
+    "executa": "next .",
+    "start": "next start",
+    "lint": "next lint"  
+  }
+}
