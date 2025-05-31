@@ -19,15 +19,15 @@ jobs:
         run: yarn build
         
   test_e2e:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 16.13.0
           cache: 'yarn'
       - name: Cypress
-        uses: cypress-io/github-action@v6
+        uses: cypress-io/github-action@v4
         with: 
           browser: edge
           
